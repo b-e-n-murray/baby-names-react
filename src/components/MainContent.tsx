@@ -1,11 +1,14 @@
-import { useState } from "react";
+import BabyName from "./BabyName";
+import { babyNames, BabyNameProps } from "../babyNamesData";
 
-function MainContent(): JSX.Element {
-//display two lists that are parallel and run vertically down the screen, separated by sex
-
-
-
-
+export function MainContent(): JSX.Element {
+  return (
+    <div>
+      {babyNames.map((nameItem: BabyNameProps) => (
+        <BabyName oneName={nameItem} key={nameItem.name} />
+      ))}
+    </div>
+  );
 }
 
-export default MainContent
+export default MainContent;
