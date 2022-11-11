@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function userInput(): JSX.Element {
+function UserInput(): JSX.Element {
     const [typedName, setTypedName] = useState("");
     return (
       <>
@@ -14,4 +14,4 @@ function userInput(): JSX.Element {
     )
 }
 
-export default userInput
+export default UserInput
