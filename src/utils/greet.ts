@@ -1,3 +1,3 @@
 export function greet(name: string): string {
-  return `Hello, ${name}!`;
+  return "Welcome to the baby name generator";
 }
