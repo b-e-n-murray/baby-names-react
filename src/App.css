@@ -1,12 +1,19 @@
-.App {
-  display: flex;
+.myHeader {
+    font-size: large;
+    color: coral;
+    font-style: oblique;
+    align-items: center;
+}
+
+.nameList {
+  display: block;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.App input {
+App input {
   margin-top: 20px;
   width: 300px;
   height: 300px;

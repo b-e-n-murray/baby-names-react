@@ -4,9 +4,9 @@ import "./App.css";
 function App(): JSX.Element {
   return (
     <>
-      <h1>Baby Name Picker</h1>
+      <h1 className="myHeader">Baby Name Picker</h1>
       <hr />
-      <MainContent />
+      <p className ="nameList"><MainContent /></p>
     </>
   );
 }
