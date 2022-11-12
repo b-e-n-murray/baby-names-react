@@ -1,13 +1,35 @@
+import { useState } from "react";
 import BabyName from "./BabyName";
 import { babyNames, BabyNameProps } from "../babyNamesData";
 
-export function MainContent(): JSX.Element {
+function MainContent(): JSX.Element {
+  const [typedName, setTypedName] = useState("");
   return (
-    <div>
-      {babyNames.map((nameItem: BabyNameProps) => (
-        <BabyName oneName={nameItem} key={nameItem.name} />
-      ))}
-    </div>
+    <>
+      <input
+        value={typedName}
+        onChange={(event) => {
+          setTypedName(event.target.value);
+        }}
+      />
+      <div>
+        {babyNames
+          .filter((val) => {
+            if (typedName === "") {
+              return val;
+            } else if (
+              val.name
+                .toLocaleLowerCase()
+                .includes(typedName.toLocaleLowerCase())
+            ) {
+              return val;
+            }
+          })
+          .map((nameItem: BabyNameProps) => (
+            <BabyName oneName={nameItem} key={nameItem.name} />
+          ))}
+      </div>
+    </>
   );
 }
 
