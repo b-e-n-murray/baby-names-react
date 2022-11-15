@@ -20,3 +20,15 @@ App input {
   font-size: medium;
   padding-left: 10px;
 }
+
+.Names {
+  padding: 0.2rem;
+  border: black;
+}
+
+.Names.m {
+  border: 2px solid skyblue;
+}
+.Names.f {
+  border: 2px solid lightcoral;
+}

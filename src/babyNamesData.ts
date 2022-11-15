@@ -1,7 +1,7 @@
 export interface BabyNameProps {
   name: string;
   id: number;
-  sex: string;
+  sex: "m" | "f";
 }
 export const babyNames: BabyNameProps[] = [
   {
