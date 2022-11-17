@@ -1,14 +1,27 @@
+.App {
+  background-color: rgb(193, 236, 249);
+}
+
 .myHeader {
     font-size: xx-large;
     color: rgb(243, 146, 215);
     display: block;
+    margin: 10px 100px 10px 100px;
 }
 
 .mainBody {
-  background-color: rgb(240, 196, 240);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  border: 5px rgb(243, 146, 215) solid;
+  padding: 20px;
 }
 
 .searchBar {
-  width: 300px;
+  width: 500px;
   display: block;
+  margin: 10px 100px 10px 100px;
+}
+
+.name {
+  font-weight: 300;
 }
