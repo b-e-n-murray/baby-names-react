@@ -1,34 +1,14 @@
 .myHeader {
-    font-size: large;
-    color: coral;
-    font-style: oblique;
-    align-items: center;
+    font-size: xx-large;
+    color: rgb(243, 146, 215);
+    display: block;
 }
 
-.nameList {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  font-family: Arial, Helvetica, sans-serif;
+.mainBody {
+  background-color: rgb(240, 196, 240);
 }
 
-App input {
-  margin-top: 20px;
+.searchBar {
   width: 300px;
-  height: 300px;
-  font-size: medium;
-  padding-left: 10px;
-}
-
-.Names {
-  padding: 0.2rem;
-  border: black;
-}
-
-.Names.m {
-  border: 2px solid skyblue;
-}
-.Names.f {
-  border: 2px solid lightcoral;
+  display: block;
 }

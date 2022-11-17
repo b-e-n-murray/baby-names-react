@@ -3,11 +3,11 @@ import "./App.css";
 
 function App(): JSX.Element {
   return (
-    <>
+    <div>
       <h1 className="myHeader">Baby Name Picker</h1>
       <hr />
-      <p className ="nameList"><MainContent /></p>
-    </>
+          <p className="mainBody"><MainContent/></p>
+      </div>
   );
 }
 
