@@ -14,7 +14,7 @@ function MainContent(): JSX.Element {
           }}
         />
       </div>
-      <div>
+      <div className="listedNames">
         {babyNames.filter((val) => {
           //filter through the array of objects containing id, name, sex
           //val denotes a single object of this array - works as an iterator?

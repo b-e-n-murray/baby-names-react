@@ -6,7 +6,7 @@ function App(): JSX.Element {
     <>
     <div className="App">
       <h1 className="myHeader">Baby Name Picker</h1>
-      <p className="mainBody">
+      <p>
         <MainContent />
       </p>
       </div>
