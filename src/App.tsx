@@ -4,11 +4,11 @@ import "./App.css";
 function App(): JSX.Element {
   return (
     <>
-    <div className="App">
-      <h1 className="myHeader">Baby Name Picker</h1>
-      <p>
-        <MainContent />
-      </p>
+      <div className="App">
+        <h1 className="myHeader">Baby Name Picker</h1>
+        <p>
+          <MainContent />
+        </p>
       </div>
     </>
   );
