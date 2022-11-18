@@ -20,6 +20,6 @@ jobs:
     - name: Check types compile
       run: yarn type-check
     - name: Check tests pass
-      run: yarn test
+      run: yarn test --passWithNoTests
     - name: Check app builds
       run: yarn build
