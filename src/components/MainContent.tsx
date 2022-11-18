@@ -20,11 +20,13 @@ function MainContent(): JSX.Element {
             if (typedName === "") {
               return true;
             } else if (
-              singleBabyData.name.toLowerCase().includes(typedName.toLowerCase())
+              singleBabyData.name
+                .toLowerCase()
+                .includes(typedName.toLowerCase())
             ) {
               return true;
             }
-            return false
+            return false;
           })
           .map((filteredBabyData: BabyNameProps) => (
             <BabyName oneName={filteredBabyData} key={filteredBabyData.name} />
