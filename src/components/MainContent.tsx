@@ -25,9 +25,7 @@ function MainContent(): JSX.Element {
               //return this object in the new filtered array of objects
               //every name will be shown
             } else if (
-              val.name
-                .toLowerCase()
-                .includes(typedName.toLowerCase())
+              val.name.toLowerCase().includes(typedName.toLowerCase())
             ) {
               return val;
               //if the name value of this single object matches the input when both are l-case,
