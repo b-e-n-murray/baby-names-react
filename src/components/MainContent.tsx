@@ -26,8 +26,8 @@ function MainContent(): JSX.Element {
               //every name will be shown
             } else if (
               val.name
-                .toLocaleLowerCase()
-                .includes(typedName.toLocaleLowerCase())
+                .toLowerCase()
+                .includes(typedName.toLowerCase())
             ) {
               return val;
               //if the name value of this single object matches the input when both are l-case,
